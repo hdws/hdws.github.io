@@ -38,8 +38,11 @@
 .content .about .hd-text{
 	padding-left:100px;
 	padding-top:30px;
+	padding-bottom:30px;
 	font-size:30px;
 	line-height: 40px;
+	border-bottom:1px solid #ddd;
+	border-left:5px solid #ddd;
 }
 .content .about .indent{
 	text-indent: 60px;

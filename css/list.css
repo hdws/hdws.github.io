@@ -37,7 +37,7 @@
 	transition:all 1s;
 }
 .content ul li .img-box img:hover{
-	transform: scale(1.2);
+	transform: scale(1.5);
 }
 .content ul li a{
 	display:block;
