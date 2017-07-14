@@ -1,3 +1,4 @@
 # 还读我诗
-[进入主页](https://hdws.github.io)
+> 今也渊明，时还读书，左右相顾，不知谁坐
+[进入主页](http://huandoo.cn/)
 ![logo](./images/erweima.jpg)
