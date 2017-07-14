@@ -1,5 +1,8 @@
-.header-cont{
-	width:1050px;
+body{
+	min-width:1200px;
+}
+.header-cont .logo{
+	margin-left:75px;
 }
 .content{
 	margin:0 auto;
@@ -8,7 +11,7 @@
 	margin-top:50px;
 	margin-bottom:30px;
 }
-.content ul{
+.content>ul{
 	margin-right:-60px;
 	list-style: none;
 }
@@ -23,13 +26,6 @@
 .content ul li .msg a{
 	float:left;
 	color:#666;
-}
-.content ul li .msg .time{
-	display:block;
-	float:left;
-	margin-left:20px;
-	font-size:12px;
-	color:#777;
 }
 .content ul li .img-box{
 	float:left;
