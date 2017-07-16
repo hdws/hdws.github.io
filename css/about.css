@@ -81,6 +81,9 @@
 	width:100%;
 	height:100%;
 }
+.content .declare{
+	text-align: justify;
+}
 .content span.show{
 	color:#666;
 }
