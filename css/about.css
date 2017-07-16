@@ -25,6 +25,9 @@
 	text-align: center;
 	border-bottom:1px solid #ddd;
 }
+.content .about .center-text p:hover{
+	color:#ff8c69;
+}
 .content .about .center-text h3{
 	margin-bottom:20px;
 	font-size:32px;
