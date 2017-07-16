@@ -141,6 +141,9 @@ body{
 	margin-bottom:70px;
 	list-style: none;
 }
+.article-cont ul li:hover a{
+	color:#ff8c69;
+}
 .article-cont ul li .img-box{
 	margin-bottom:30px;
 	width:100%;
@@ -156,7 +159,7 @@ body{
 	-ms-transition:all 1s;
 	transition:all 1s;
 }
-.article-cont ul li .img-box:hover img{
+.article-cont ul li:hover .img-box img{
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);

@@ -20,6 +20,9 @@
 	margin-right:30px;
 	list-style: none;
 }
+.content ul li:hover .msg>a{
+	color:#ff8c69;
+}
 .content ul li .msg a{
 	float:left;
 	color:#666;
@@ -40,7 +43,7 @@
 	-ms-transition:all 1s;
 	transition:all 1s;
 }
-.content ul li .img-box img:hover{
+.content ul li:hover .img-box img{
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);
