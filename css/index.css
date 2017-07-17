@@ -113,23 +113,14 @@ body{
 	width:260px;
 	height:260px;
 	background: url(../images/name_bg.jpg) no-repeat;
-	// border:1px solid #ddd;
-}
-.cont-box .host .host-box:hover{
-	// border:1px solid #ff8c69;
-}
-// .cont-box .host .host-box:hover>a{
-// 	color: #ff8c69;
-// }
-.cont-box .host:hover .host-box>a{
-	color: #ff8c69;
 }
 .cont-box .host .host-box>a{
 	display:block;
 	line-height: 260px;
 	text-align: center;
 	font-size:160px;
-	color:#888;
+	font-weight: 200;
+	color:#999;
 	text-decoration:none;
 	cursor:pointer;
 }
