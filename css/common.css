@@ -57,6 +57,7 @@ body{
 	color:#ff8c69;
 }
 .footer{
+	padding-top:40px;
 	height:80px;
 	width:100%;
 	// background: #000; 
@@ -66,7 +67,7 @@ body{
 	font-size:18px;
 	color:#fff;
 	text-align:center;
-	line-height: 80px;
+	// line-height: 80px;
 }
 .footer .tongji{
 	color:#fff;
