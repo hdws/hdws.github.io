@@ -120,11 +120,11 @@ body{
 	margin-right:50px;
 	width:260px;
 	height:260px;
-	-moz-transition:all .5s;
-	-webkit-transition:all .5s;
-	-o-transition:all .5s;
-	-ms-transition:all .5s;
-	transition:all .5s;
+	-moz-transition:all 1s;
+	-webkit-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	transition:all 1s;
 	// background: url(../images/name_bg.jpg) no-repeat;
 }
 .cont-box .host .host-box:hover{
