@@ -120,7 +120,19 @@ body{
 	margin-right:50px;
 	width:260px;
 	height:260px;
+	-moz-transition:all .5s;
+	-webkit-transition:all .5s;
+	-o-transition:all .5s;
+	-ms-transition:all .5s;
+	transition:all .5s;
 	// background: url(../images/name_bg.jpg) no-repeat;
+}
+.cont-box .host .host-box:hover{
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	transform:rotate(360deg);
 }
 .cont-box .host .host-box>a{
 	display:block;
