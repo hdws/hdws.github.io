@@ -120,7 +120,7 @@ body{
 	margin-right:50px;
 	width:260px;
 	height:260px;
-	background: url(../images/name_bg.jpg) no-repeat;
+	// background: url(../images/name_bg.jpg) no-repeat;
 }
 .cont-box .host .host-box>a{
 	display:block;
@@ -132,18 +132,18 @@ body{
 	text-decoration:none;
 	cursor:pointer;
 }
-// .cont-box .host .host-box.name_1{
-// 	background: url(../images/name_1.jpg) no-repeat;
-// }
-// .cont-box .host .host-box.name_2{
-// 	background: url(../images/name_2.jpg) no-repeat;
-// }
-// .cont-box .host .host-box.name_3{
-// 	background: url(../images/name_3.jpg) no-repeat;
-// }
-// .cont-box .host .host-box.name_4{
-// 	background: url(../images/name_4.jpg) no-repeat;
-// }
+.cont-box .host .host-box.name_1{
+	background: url(../images/name_1.jpg) no-repeat;
+}
+.cont-box .host .host-box.name_2{
+	background: url(../images/name_2.jpg) no-repeat;
+}
+.cont-box .host .host-box.name_3{
+	background: url(../images/name_3.jpg) no-repeat;
+}
+.cont-box .host .host-box.name_4{
+	background: url(../images/name_4.jpg) no-repeat;
+}
 .article-cont ul{
 	margin-right:-100px;
 	list-style: none;
