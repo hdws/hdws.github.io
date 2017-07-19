@@ -40,11 +40,12 @@
 .content p{
 	color:#999;
 }
-.content p.qq{
-	margin-top:15px;
+.content h1.guanzhu{
+	margin-bottom:0;
+	border-bottom:none;
 }
 .content .img-box{
-	float:left;
+	margin-left:-5px;
 	width:90px;
 	height:90px;
 }
