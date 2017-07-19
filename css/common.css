@@ -86,6 +86,14 @@ body{
 .clearfix{
 	zoom:1;
 }
+a:active{ 
+    background-color: transparent !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;
+}
+
 .totop{
 	position:fixed;
 	right:20px;
