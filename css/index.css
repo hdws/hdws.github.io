@@ -77,15 +77,15 @@ body{
 	bottom:0;
 	width:100%;
 	height:120px;
-	// background: #000; 
-	// opacity: 0.6; 
-	// filter:alpha(opacity=60);
 	background: rgba(0,0,0,.6);
 	color:#fff;
 	font-size:32px;
 	line-height: 120px;
 	text-align: center;
 	font-weight: 200;
+	background: #000; 
+	opacity: 0.6; 
+	filter:alpha(opacity=60);
 }
 .banner .text a{
 	display:block;
@@ -125,7 +125,6 @@ body{
 	-o-transition:all 1s;
 	-ms-transition:all 1s;
 	transition:all 1s;
-	// background: url(../images/name_bg.jpg) no-repeat;
 }
 .cont-box .host .host-box:hover{
 	-moz-transform:rotate(360deg);
@@ -183,14 +182,12 @@ body{
 	-webkit-transition:all 1s;
 	-moz-transition:all 1s;
 	-o-transition:all 1s;
-	-ms-transition:all 1s;
 	transition:all 1s;
 }
 .article-cont ul li:hover .img-box img{
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);
-	-ms-transform: scale(1.5);
 	transform: scale(1.5);
 }
 .article-cont ul li a{
