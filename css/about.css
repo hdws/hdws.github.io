@@ -33,6 +33,9 @@
 	float:left;
 	width:541px;
 }
+.content .msg .msg-text a:hover{
+	color:#ff8c69;
+}
 .content .msg p a{
 	color:#888;
 	text-decoration: none;
