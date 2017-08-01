@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>添加个人微信</title>
+	<title>关注我们，扫码添加微信公众号</title>
 	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 	<meta name="keywords" content="" />
@@ -18,7 +18,7 @@
 			top:50%;
 			left:50%;
 			margin-top:-112px;
-			margin-left:-220px;
+			margin-left:-250px;
 			width:500px;
 		}
 		.personal .erweima{
@@ -26,31 +26,73 @@
 			width:200px;
 			height:200px;
 			border:1px solid #ddd;
+			cursor:pointer;
 		}
 		.personal .erweima img{
 			width:100%;
 			border:none;
 		}
+		.personal .erweima:hover{
+			border:1px solid #ff8c69;
+		}
+		.personal .erweima:hover p{
+			color:#ff8c69;
+		}
 		.personal .dacheng{
-			margin-right:96px;
+			margin-left:96px;
 		}
 		.personal .text{
 			font-size:16px;
 			color:#999;
 			text-align: center;
 		}
+		.scrolltext{
+			position:absolute;
+			left:50%;
+			bottom:100px;
+			width:900px;
+			margin:0 auto;
+			margin-left:-450px;
+			height:40px;
+			line-height: 40px;
+			border:1px solid #eee;
+			color:#ff8c69;
+			font-size:20px;
+		}
 	</style>
 </head>
 <body>
-	<div class="personal clearfix">
-		<div class="erweima dacheng">
-			<img src="./images/dacheng.jpg" alt="">
-			<p class="text">扫一扫二维码，加我微信</p>
-		</div>
-		<div class="erweima">
-			<img src="./images/erweima.jpg" alt="">
-			<p class="text">扫一扫二维码，关注我们</p>
+	<!-- header begin -->
+	<div class="header">
+		<div class="header-cont clearfix">
+			<a class="logo" href="./index.html"><img src="./images/logo.jpg" alt=""></a>
+			<ul class="nav">
+				<li><a href="./index.html">首页</a></li>
+				<li><a href="./list.html" target="_blank">往期回顾</a></li>
+				<li><a href="./college.html" target="_blank">大学生专栏</a></li>
+				<li><a href="./about.html" target="_blank">关于我们</a></li>
+				<li><a href="./message.html" target="_blank">留言板</a></li>
+			</ul>
 		</div>
 	</div>
+	<!-- header end -->
+	<!-- erweima-cont begin -->
+	<div class="personal clearfix">
+		<div class="erweima">
+			<img src="./images/erweima.jpg" alt="">
+			<p class="text">扫一扫，关注我们</p>
+		</div>
+		<div class="erweima dacheng">
+			<img src="./images/dacheng.jpg" alt="">
+			<p class="text">扫一扫，加我微信</p>
+		</div>
+	</div>
+	<!-- erweima-cont end -->
+	<!--scrolltext  begin-->
+    <div class="scrolltext">
+       <marquee behavior="alternate" direction="" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()" >如果你也是一名文字发烧友，关注我们不后悔。等你来！</marquee> 
+    </div>
+    <!--scrolltext  end-->
+
 </body>
 </html>
