@@ -44,13 +44,14 @@
 	text-decoration: none;
 }
 .content .msg .msg-text .dacheng{
-	margin-top:30px;
+	margin-top:20px;
+	text-decoration: none;
+}
+.content .msg .msg-text .dacheng:hover{
+	color:#666;
 }
 .content p{
 	color:#999;
-}
-.content .msg .dacheng{
-	text-decoration: none;
 }
 .content h1.guanzhu{
 	margin-bottom:0;
@@ -102,6 +103,6 @@
 }
 .btn-default:hover{
 	color:#333;
-	background-color:#e6e6e6;
+	// background-color:#e6e6e6;
 	border-color:#adadad
 }
