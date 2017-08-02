@@ -18,14 +18,14 @@
 	border-bottom: 1px solid #ddd;
 }
 .content .about{
-	margin-bottom:70px;
+	margin-bottom:60px;
 }
 .content .about p{
 	font-size:18px;
 	color:#888;
 }
 .content .msg{
-	margin-bottom:30px;
+	margin-bottom:60px;
 	font-size:18px;
 	color:#888;
 }
@@ -54,7 +54,7 @@
 	color:#999;
 }
 .content h1.guanzhu{
-	margin-bottom:0;
+	margin-bottom:5px;
 	border-bottom:none;
 }
 .content .img-box{
