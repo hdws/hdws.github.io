@@ -60,44 +60,33 @@ body{
 .header-cont .nav li:hover a{
 	color:#ff8c69;
 }
-.bottom_nav{
-	width:100%;
-	padding: 10px 0;
-	padding-top:30px;
-	// background: #272a30;
-	background: rgba(0,0,0,.6);
-	color:#fff;
-	text-align: center;
-}
-.bottom_nav a{
-	color:#fff;
-	font-size:16px;
-	text-decoration: none;
-}
-.bottom_nav>a:hover{
-	color:#ff8c69;
-}
-.bottom_nav .friend_link{
-	margin-top:10px;
-}
-.bottom_nav .friend_link a:hover{
-	color:#ff8c69;
-}
 .footer{
-	padding-top:0;
-	// padding-top:32px;
-	height:80px;
+	padding:22px 0;
 	width:100%;
 	background: rgba(0,0,0,.6);
-	font-size:18px;
+	font-size:16px;
 	color:#fff;
 	text-align:center;
 	background: #000; 
 	opacity: 0.6; 
 	filter:alpha(opacity=60);
 }
+.footer .bottom_nav{
+	width:100%;
+	margin-bottom:10px;
+	font-size:16px;
+}
+.footer .bottom_nav a{
+	color:#fff;
+	font-size:16px;
+	text-decoration: none;
+}
+.footer .bottom_nav>a:hover{
+	color:#ff8c69;
+}
 .footer p.copyright{
-	margin-bottom:6px;
+	margin-bottom:10px;
+	font-size:18px;
 }
 .footer .tongji{
 	color:#fff;
