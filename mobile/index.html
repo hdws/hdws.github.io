@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>还读我诗欢迎您的到来！</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>在坚硬的岁月里，写一首绵软的诗。</title>
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="renderer" content="webkit">
 	<link href="https://cdn.bootcss.com/flexslider/2.6.4/flexslider.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
@@ -62,12 +65,12 @@
 		.list-cont .article-list{
 			display:block;
 			margin:20px 0;
-			padding-left:32px;
+			padding:0 15px;
 			width:100%;
 			height:66px;
 			line-height: 66px;
 			border:1px solid #eee;
-			border-radius: 10px;
+			border-radius: 6px;
 			white-space:nowrap;
 			overflow:hidden; 
 			text-overflow:ellipsis;
@@ -82,10 +85,14 @@
 			font-size:16px;
 		}
 		.tellyou{
-			padding:10px 20px;
-			color:#333;
+			padding:10px 15px;
+			color:#ff8967;
 			font-size:16px;
 			text-align: center;
+		}
+		.copy{
+			padding-top:0;
+			color:#333;
 		}
 	</style>
 </head>
@@ -118,8 +125,9 @@
 				touch: true, //是否支持触屏滑动
 				directionNav: false, //箭头
 				animation: "slide", 
-				controlNav: false, //nav list
-				animationLoop: true //循环
+				controlNav: true, //nav list
+				animationLoop: true,
+				pauseOnHover:false //zanting
     		}); 
 		});     
 	</script>
@@ -188,8 +196,8 @@
 		<div class="article-list"><a href="http://mp.weixin.qq.com/s/NgoiPf1tiMnQOTSK4f_43w">蒲公英 <span>｜ 靓丽人生</span></a></div>
 		<div class="article-list"><a href="http://mp.weixin.qq.com/s/6g5-Tn-rBbnWoan2hY91eg">阿依阔勒 <span>｜ 还读我诗</span></a></div>
 	</div>
-	<div class="tellyou">声明：所有原创权利归作者所有！如若引用和转载，请务必先与还读我诗平台或作者联系！</div>
-	<div class="tellyou">Copyright © 2016-2017 还读我诗 版权所有</div>
+	<div class="tellyou">声明：所有原创权利归作者所有！<br>如若引用和转载，请务必先与 还读我诗平台 或作者联系！</div>
+	<div class="tellyou copy">Copyright © 2016-2017 还读我诗 版权所有</div>
 	
 
 </body>
