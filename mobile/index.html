@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>在坚硬的岁月里，写一首绵软的诗。</title>
+	<title>还读我诗欢迎您</title>
 	<meta http-equiv="Cache-Control" content="no-transform">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -16,9 +16,24 @@
 			margin:0;
 			padding:0;
 		}
+		.clearfix:after{
+			content:'.'; 
+			display:block;
+			height:0;
+			clear:both;
+			visibility:hidden 
+		}
+		.clearfix{
+			zoom:1;
+		}
+		.mt10{
+			margin-top:10px;
+		}
 		.header{
 			height:60px;
 			width:100%;
+			overflow: hidden;
+			margin-right:100px;
 		}
 		.header>.logo{
 			float:left;
@@ -27,14 +42,22 @@
 			border:none;
 		}
 		.header .website{
+			float:left;
 			height:60px;
 			line-height: 60px;
 			font-size:20px;
 			color:#999;
 			text-align: center;
+			text-indent: 60px;
+		}
+		.header .btn {
+			float:right;
+			margin-right:15px;
+			margin-top:15px;
+			vertical-align: middle;
 		}
 		.flexslider{
-			margin-bottom:20px;
+			margin-bottom:0px;
 		}
 		.flexslider .slides{
 			height:220px;
@@ -56,6 +79,9 @@
 			color:#fff;
 			text-align: center;
 			background: rgba(0,0,0,.6);
+		}
+		.scrolltext{
+			margin:0 20px;
 		}
 		.title{
 			font-size:28px;
@@ -111,9 +137,10 @@
 	</style>
 </head>
 <body>
-	<div class="header">
+	<div class="header clearfix">
 		<img class="logo" src="../images/logo.jpg" alt="">
 		<p class="website">www.huandoo.cn</p>
+		<a class="btn btn-success" href="#add">＋关注</a>
 	</div>
 	
 	<!-- slide begin -->
@@ -145,7 +172,10 @@
     		}); 
 		});     
 	</script>
-	<h2 class="title">往期欣赏</h2>
+	<div class="scrolltext">
+       <marquee behavior="" direction="" scrollamount="3">在坚硬的岁月里，写一首绵软的诗。喜欢文字的朋友们，欢迎加入还读我诗大家庭！</marquee> 
+    </div>
+	<h2 class="title mt10">往期欣赏</h2>
 	<div class="list-cont">
 		<div class="article-list"><a href="http://mp.weixin.qq.com/s/9K9NNx1ARfeUMjWSV1ddlg">绿豆冰糕 <span>｜ 屈月</span></a></div>
 		<div class="article-list"><a href="http://mp.weixin.qq.com/s/y9HGs9suRQo5aJcaihr_xQ">有手，却不知如何碰你 <span>｜ 靓丽人生</span></a></div>
@@ -211,9 +241,10 @@
 		<div class="article-list"><a href="http://mp.weixin.qq.com/s/6g5-Tn-rBbnWoan2hY91eg">阿依阔勒 <span>｜ 还读我诗</span></a></div>
 	</div>
 	<h2 class="title">来了给个关注再走呗😊</h2>
-	<div class="add">
+	<div class="add" id="add">
 		<div class="img-box"><img src="../images/erweima.jpg" alt=""></div>
-		<p class="tip-text">长按二维码，关注我们</p>
+		<p class="tip-text">微信扫一扫，关注我们</p>
+		<p class="tip-text">或者微信搜索公众号：还读我诗</p>
 	</div>
 	<div class="tellyou">声明：所有原创权利归作者所有！<br>如若引用和转载，请务必先与 还读我诗平台 或作者联系！</div>
 	<div class="tellyou copy">Copyright © 2016-2017 还读我诗 版权所有</div>
