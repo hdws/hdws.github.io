@@ -6,23 +6,85 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<title>留言板</title>
 	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+    		-webkit-user-select:none;
+    		-moz-user-select:none;
+    		-ms-user-select:none;
+    		user-select:none;
+		}
+		.clearfix:after{
+			content:'.'; 
+			display:block;
+			height:0;
+			clear:both;
+			visibility:hidden 
+		}
+		.clearfix{
+			zoom:1;
+		}
+		.header{
+			height:60px;
+			width:100%;
+			overflow: hidden;
+			margin-right:100px;
+			margin-bottom:10px;
+		}
+		.header>.logo{
+			float:left;
+			width:60px;
+			height:60px;
+			border:none;
+		}
+		.header .website{
+			float:left;
+			height:60px;
+			line-height: 60px;
+			font-size:20px;
+			color:#999;
+			text-align: center;
+			text-indent: 5px;
+		}
+		.header .btn {
+			float:right;
+			margin-right:15px;
+			margin-top:15px;
+			vertical-align: middle;
+		}
 		h2{
 			margin-bottom:20px;
 			color:#666;
-			font-size:24px;
+			font-size:20px;
+			text-indent:20px;
+		}
+		.hide{
+			width:100%;
+			height:30px;
+			margin-top:-30px;
+			background: #AAB2B8;
 		}
 	</style>
 </head>
 <body>
+	<div class="header clearfix" id="header">
+		<img class="logo" src="../images/logo.jpg" alt="">
+		<p class="website">www.huandoo.cn</p>
+		<a class="btn btn-success" href="#add">关注我们</a>
+	</div>
 	<h2>悄悄说出你的想法：</h2>
 	<div class="message-box">
 		<!-- UY BEGIN -->
 		<div id="uyan_frame"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2140360"></script>
 		<!-- UY END -->
 	</div>
+	<div class="hide"></div>
 	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
-	<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2140360"></script>
 </body>
 </html>
