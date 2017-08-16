@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《愿你恋爱时，仍旧一少年》',
-        url1:'http://mp.weixin.qq.com/s/GRO4HLg0c6nMyxNhyXYiwQ',
+        title_1:'最近更新:《黎明》',
+        url1:'http://mp.weixin.qq.com/s/yMZGDUMxvFOqBpTVpKCDZw',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,12 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'黎明',
+				author:'叶小松',
+				url:'http://mp.weixin.qq.com/s/yMZGDUMxvFOqBpTVpKCDZw',
+				img:'./images/list_img/article59.jpg'
+			},
 			{
 				name:'愿你恋爱时，仍旧一少年',
 				author:'呆呆',
