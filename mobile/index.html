@@ -10,223 +10,9 @@
 	<link href="https://cdn.bootcss.com/flexslider/2.6.4/flexslider.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/index.css">
 	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
 	<script src="https://cdn.bootcss.com/flexslider/2.6.4/jquery.flexslider.min.js"></script>
-	<style>
-		*{
-			margin:0;
-			padding:0;
-		}
-		body{
-    		-webkit-user-select:none;
-    		-moz-user-select:none;
-    		-ms-user-select:none;
-    		user-select:none;
-		}
-		.clearfix:after{
-			content:'.'; 
-			display:block;
-			height:0;
-			clear:both;
-			visibility:hidden 
-		}
-		.clearfix{
-			zoom:1;
-		}
-		.mt10{
-			margin-top:10px;
-		}
-		.mr5{
-			margin-right:5px;
-		}
-		.header{
-			height:60px;
-			width:100%;
-			overflow: hidden;
-			/*margin-right:100px;*/
-		}
-		.header>.logo{
-			float:left;
-			width:60px;
-			height:60px;
-			border:none;
-		}
-		.header .website{
-			float:left;
-			height:60px;
-			line-height: 60px;
-			font-size:20px;
-			color:#999;
-			text-align: center;
-			text-indent: 8px;
-		}
-		.header .btn {
-			float:right;
-			margin-right:15px;
-			margin-top:15px;
-			vertical-align: middle;
-		}
-		.flexslider{
-			margin-bottom:5px;
-		}
-		.flexslider .slides{
-			height:220px;
-		}
-		.flexslider .slides li{
-			position:relative;
-		}
-		.flexslider .slides li>img{
-			height:220px;
-		}
-		.flexslider .slides li .banner-text{
-			position:absolute;
-			left:0;
-			bottom:-10px;
-			height:40px;
-			width:100%;
-			line-height: 40px;
-			font-size:14px;
-			color:#fff;
-			text-align: center;
-			background: rgba(0,0,0,.6);
-		}
-		.scrolltext{
-			position:relative;
-			margin:0 20px;
-			color:#333;
-		}
-		.scrolltext .icon{
-			display:block;
-			position: absolute;
-			top:0;
-			left:0;
-			background:#fff;
-			font-size:20px;
-			color:#ff8c69;
-		}
-		.scrolltext .text{
-			margin-left:20px;
-		}
-		.title{
-			font-size:28px;
-			color:#666;
-			text-align: center;
-		}
-		.title .fa{
-			color:#fc6a96;
-		}
-		.list-cont .article-list{
-			display:block;
-			margin:20px 0;
-			padding:0 15px;
-			width:100%;
-			height:66px;
-			line-height: 66px;
-			border:1px solid #eee;
-			border-radius: 6px;
-			white-space:nowrap;
-			overflow:hidden; 
-			text-overflow:ellipsis;
-		}
-		.list-cont .article-list a{
-			font-size:24px;
-			color:#777;
-			text-decoration: none;
-		}
-		.list-cont a span{
-			color:#999;
-			font-size:16px;
-		}
-		.tellyou{
-			padding:10px 15px;
-			color:#ff8967;
-			font-size:12px;
-			text-align: center;
-		}
-		.copy{
-			padding-top:0;
-			color:#333;
-			font-size:16px;
-		}
-		.add .img-box{
-			margin:0 auto;
-			width:220px;
-			height:220px;
-		}
-		.add .img-box img{
-			width:100%;
-		}
-		.add .tip-text{
-			font-size:14px;
-			color:#999;
-			text-align: center;
-		}
-		.totop{
-			width:300px;
-			margin:0 auto;
-		}
-		.totop a{
-			display:block;
-			width:100%;
-		}
-		@media screen and (min-width:320px){
-			.website{
-				display:none;
-			}
-			.flexslider .slides{
-				height:220px;
-			}
-			.flexslider .slides li>img{
-				height:220px;
-			}
-		}
-		@media screen and (min-width:768px){
-			.header{
-				padding:0 60px;
-			}
-			.list-cont .article-list{
-				padding:0 76px;
-			}
-			.flexslider{
-				margin-bottom:5px;
-			}
-			.flexslider .slides{
-				height:420px;
-			}
-			.flexslider .slides li{
-				position:relative;
-			}
-			.flexslider .slides li>img{
-				height:420px;
-			}
-			.flexslider .slides li .banner-text{
-				position:absolute;
-				left:0;
-				bottom:-10px;
-				height:80px;
-				width:100%;
-				line-height: 80px;
-				font-size:26px;
-				color:#fff;
-				text-align: center;
-				background: rgba(0,0,0,.6);
-			}
-		}
-		@media screen and (min-width:1024px){
-			.flexslider{
-				margin-bottom:5px;
-			}
-			.flexslider .slides{
-				height:620px;
-			}
-			.flexslider .slides li{
-				position:relative;
-			}
-			.flexslider .slides li>img{
-				height:620px;
-			}
-		}
-	</style>
 </head>
 <body>
 	<div class="header clearfix" id="header">
@@ -269,71 +55,12 @@
        <i class="fa fa-volume-down icon"></i><marquee class="text" behavior="" direction="" scrollamount="3">大学生征稿活动开始啦！详情咨询平台负责人</marquee> 
     </div>
 	<h2 class="title mt10">往期欣赏</h2>
-	<div class="list-cont">
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/GRO4HLg0c6nMyxNhyXYiwQ">愿你恋爱时，仍旧一少年 <span>｜ 呆呆</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/9K9NNx1ARfeUMjWSV1ddlg">绿豆冰糕 <span>｜ 屈月</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/y9HGs9suRQo5aJcaihr_xQ">有手，却不知如何碰你 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/yfk8hJCTaDnqEjG5WBrvTw">不再仰望星空 <span>｜ 禾火</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/kV59muE1fWLXVAlyGm1IrQ">这本书永远都读不完 <span>｜ 我给你写信</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/bs8nvqIBe2vfg4JII48RUg">他想起山茶花 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/tTgBU9rKjF9kfFsLrqTI1w">春天，一个有希望的男子 <span>｜ 赵眠</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/oaO9u9d2uRUviFpYEtnY9w">翠鸟啼 <span>｜ 郭辉</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/KK8qWTTbIdsVTpHD6qmf9w">盛满了水的心不敢动 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/3oizuTMZognIPTqhjQmwog">不说话的路格外长 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/2V4sgrRxbT7vafGOvttoTA">补丁，是衣裳的花瓣 <span>｜ 赵眠</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/7hwg6cWhSFHFP2EqsG53iQ">半径3米之内 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/DoHiZnMCFSW4d7Fen5c-8Q">吾心如病孩 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/vg8IwlTqDgJqYx0QC9lQLA">春风十里不如去造房子 <span>｜ Miss罗</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/5bMp8OxMmGn8L-ZTvJPNIw">一瓢饮你小小的丰满 <span>｜ 还读</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/Gcgw-ekGtRXJvVdHDj5FBQ">小扣柴扉 <span>｜ 名家</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/CgdaKnZowR2fdozZ5tmTtw">你给我养的耗子 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/Ep0dAXhs_6Q67G0p-ItHXg">致星星 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/Mg82oOE7840c-OW9APfvUw">梦落在人间越开越盛的花中 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/SJEIaPB-AhrFYxNHcMzYnw">天香引（组诗） <span>｜ 郭辉</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/yGg5hJtgRJJKhleQvnBRZA">初夏.适雨 <span>｜ 青叶若叶</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/ZscpxwHeLCAjHwnFMkczaA">暮色有时也会客死它乡 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/i9QWYxETsEmq9wKjFPIviA">狂人日记 <span>｜ 郭宗社</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/gNMhd4mlbc4o-HiB1xjadA">川内伦子，小清新包裹的“祸心” <span>｜ 还读我诗</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/_m1GOAje_fIHPyIhdm7EGw">唐诗.新春 <span>｜ 名家</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/UETCDEd4VrZC4Bgl87QZIw">摘星的手 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/7eou5gKb2GtPOb-Wpf7lpA">回一次生儿育女前的梦 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/qmBGpg9Hzx3GeantxpNK5g">内心的落日 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/iIuS5A3Oee0VJcCOOgM6zg">妈妈，带我回家 <span>｜ 素月绚</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/cVEfKAbuqufUG6LyuG7Gaw">留恋的雁声飞过头顶 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/lYEkaowJrGUBgyY9VOhpLw">夜色诚恳 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/BcBKKI3agbjzsZg6_BphGA">春天的音符 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/Rtnc61D4IIVFS4WQ__mohg">渡 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/QApgqWk0G9MPFVOA-sHZdA">新春，为一朵早开的桃花命名 <span>｜ 董卫华</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/7RvoHeVb_DDRl9VKH269XQ">奔向未来的日子 <span>｜ 韵依依</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/kRbOE_jLH0ycluU6XdjS4w">妹妹，又下雪了 <span>｜ 董卫华</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/-cOPsUze38sAvTH1L2Hj2w">站在春天肩上问候一缕春风 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/I__suwEsc3Q54TJzOO7OCQ">香槟玫瑰 <span>｜ 郭辉</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/mk-GLYLBo28TkUKW4MijPA">花瓣上的情书 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/skzvNl9Auji8LPq0kibKmQ">春暖花开 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/oItB2nNy3TnaUaWXXspH-Q">心的房子 <span>｜ 董卫华</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/-uUmYiWL8NDyE1N5H81iMw">致我的小情人 <span>｜ 韵依依</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/6wQVONoxy1sWZoKxlFhg7g">为你安排一场小雪 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/tT5IJILaVrdZaqMsm3NdBQ">欢乐元宵 <span>｜ 韵依依</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/eE3AU5R0qiUutn4GyARQQQ">深情 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/QO5m3YDloEksoQYXw6xaDw">春风十里不如你 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/hFdhtDn3EvMfLnit24VPbA">小僧 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/aQVzv-EjDM-xEeaG2PdiTA">妙境儿清 <span>｜ 青叶若叶</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/KdZn8pArKyPtns3DeVfW4Q">我不是荆轲 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/KTngqzwuTWrau7-HLPw58A">集市 <span>｜ 韵依依</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/gDxX-eU6A69enoZ_DL0PGw">过年的情结 <span>｜ 韵依依</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/XqalobobYOCtFt2TtqFfIg">倚门回首 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/g1Ebm24oSGXvWn-LRcy38g">望乡 <span>｜ 韵依依</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/p6u3hYivWJXMyMiBwH4yug">天涯看花 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/wY4w9O8fon4-JH1cnDc16w">哭泣，是开始痊愈的象征 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/Id2BufTKshGkcbP_7pPilQ">赶海 <span>｜ 韵依依</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/Ie5MV0EXwK2tIM3H8saYaA">冬至无雪 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/46VHLuvS8mFCUUwbx2IQWQ">盎然 <span>｜ 叶小松</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/SuwIR-YNzKL-p863konQhQ">醉蟹 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/8i7dhQzuQjz_WkrNLMHmOQ">我是你眼中的一滴泪 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/-wO98IFBK40UYcx4Yn-vWw">多像沉寂后静静的海面 <span>｜ 周长风</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/NgoiPf1tiMnQOTSK4f_43w">蒲公英 <span>｜ 靓丽人生</span></a></div>
-		<div class="article-list"><a href="http://mp.weixin.qq.com/s/6g5-Tn-rBbnWoan2hY91eg">阿依阔勒 <span>｜ 还读我诗</span></a></div>
+	<div id="article" class="list-cont">
+		<div class="article-list" v-for="item in items">
+			<a v-bind:href="item.url">{{item.name}} <span>｜ {{item.author}}</span></a>
+		</div>
 	</div>
+	
 	<h2 class="title">来了给个关注再走呗 <i class="fa fa-heart"></i></h2>
 	<div class="add" id="add">
 		<div class="img-box"><img src="../images/erweima.jpg" alt=""></div>
@@ -344,10 +71,12 @@
 	<div class="totop">
 		<a class="btn btn-primary" href="#header">返回欣赏</a>
 	</div>
-	<div class="tellyou">声明：所有原创一切权利归作者所有！<br>如若引用和转载，请务必先与作者或 还读我诗平台联系！</div>
+	<div class="tellyou">声明：所有原创一切权利归作者所有！<br>如若引用转载，请务必先与作者或还读我诗平台联系！</div>
 	<div class="tellyou copy">Copyright © 2016-2017 还读我诗 版权所有</div>
 	
 	<script src="../js/bdtj.js"></script>
-
+	<script src="../js/vue.min.js"></script>
+	<script src="../js/data.js"></script>
+	
 </body>
 </html>

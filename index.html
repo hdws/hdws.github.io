@@ -32,12 +32,12 @@
 	<!-- header end -->
 	<!-- banner begin -->
 	<div class="banner">
-		<div class="b-img">
+		<div class="b-img" id="newArticle">
 			<div class="img-list" style="background:url(images/banner1.jpg) center no-repeat;">
-				<p class="text"><a href="http://mp.weixin.qq.com/s/GRO4HLg0c6nMyxNhyXYiwQ" target="_blank">最近更新:《愿你恋爱时，仍旧一少年》</a></p>
+				<p class="text"><a v-bind:href="url1" target="_blank">{{title_1}}</a></p>
 			</div>
 			<div class="img-list" style="background:url(images/banner2.jpg) center no-repeat;">
-				<p class="text"><a href="./college.html" target="_blank">大学生们，文学作品开始征稿啦！</a></p>
+				<p class="text"><a v-bind:href="url2" target="_blank">{{title_2}}</a></p>
 			</div>
 		</div>
 		<a class="bar-left" href="#"><em></em></a><a class="bar-right" href="#"><em></em></a>
@@ -46,12 +46,6 @@
 	<!-- cont-box begin -->
 	<div class="cont-box">
 		<!-- name begin -->
-		<!-- <div class="host clearfix">
-			<div class="host-box"><a href="javascript:;">还</a></div>
-			<div class="host-box"><a href="javascript:;">读</a></div>
-			<div class="host-box"><a href="javascript:;">我</a></div>
-			<div class="host-box"><a href="javascript:;">诗</a></div>
-		</div> -->
 		<div class="host clearfix">
 			<div class="host-box name_1"></div>
 			<div class="host-box name_2"></div>
@@ -61,46 +55,11 @@
 		<!-- name end -->
 		<h2>佳作推荐</h2>
 		<div class="article-cont">
-			<ul class="clearfix">
-				<li>
-					<div class="img-box"><img src="./images/index_img/index4.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/SuwIR-YNzKL-p863konQhQ" target="_blank">醉蟹 <span>｜ 靓丽人生</span></a>
-					<p class="say">昨夜有人送我归来，前面的持火把，后面的吹笛</p>
-				</li>
-				<li>
-					<div class="img-box"><img src="./images/index_img/index1.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/kRbOE_jLH0ycluU6XdjS4w" target="_blank">妹妹，又下雪了 <span>｜ 董卫华</span></a>
-					<p class="say">你再不来，我要下雪了</p>
-				</li>
-				<li>
-					<div class="img-box"><img src="./images/index_img/index2.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/I__suwEsc3Q54TJzOO7OCQ" target="_blank">香槟玫瑰 <span>｜ 郭辉</span></a>
-					<p class="say">吟无用之诗，醉无用之酒，读无用之书，钟无用之情，无用之人的有滋有味</p>
-				</li>
-				<li>
-					<div class="img-box"><img src="./images/index_img/index3.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/46VHLuvS8mFCUUwbx2IQWQ" target="_blank">盎然 <span>｜ 叶小松</span></a>
-					<p class="say">瞳孔深红色，于是世界沉入黄昏</p>
-				</li>
-				<li>
-					<div class="img-box"><img src="./images/index_img/index5.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/iIuS5A3Oee0VJcCOOgM6zg" target="_blank">妈妈，带我回家 <span>｜ 素月绚</span></a>
-					<p class="say">篷户豪门一洞开，万紫千红灌体来，亘古从来亲难舍，消灵磨肉填沧海</p>
-				</li>
-				<li>
-					<div class="img-box"><img src="./images/index_img/index6.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/Id2BufTKshGkcbP_7pPilQ" target="_blank">赶海 <span>｜ 韵依依</span></a>
-					<p class="say">能否与你，琴瑟再御牵手白头，一捧雪端来了前生的约定</p>
-				</li>
-				<li>
-					<div class="img-box"><img src="./images/index_img/index7.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/Gcgw-ekGtRXJvVdHDj5FBQ" target="_blank">小扣柴扉 <span>｜ 名家</span></a>
-					<p class="say">老家的小院依旧是柴门</p>
-				</li>
-				<li>
-					<div class="img-box"><img src="./images/index_img/index8.jpg" alt=""></div>
-					<a class="title" href="http://mp.weixin.qq.com/s/SJEIaPB-AhrFYxNHcMzYnw" target="_blank">天香引 <span>｜ 郭辉</span></a>
-					<p class="say">一个人到世界上来，来做什么？爱是最可爱的，最好听的，最好看的，最好吃的</p>
+			<ul id="onShow" class="clearfix">
+				<li v-for="item in items">
+					<div class="img-box"><img v-bind:src="item.img" alt=""></div>
+					<a class="title" v-bind:href="item.url" target="_blank">{{item.name}} <span>｜ {{item.author}}</span></a>
+					<p class="say">{{item.say}}</p>
 				</li>
 			</ul>
 		</div>
@@ -145,5 +104,7 @@
         }
     });
 	</script>
+	<script src="./js/vue.min.js"></script>
+	<script src="./js/data.js"></script>
 </body>
 </html>
