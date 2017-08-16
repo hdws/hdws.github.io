@@ -169,13 +169,23 @@
 			display:block;
 			width:100%;
 		}
+		@media screen and (min-width:320px){
+			.website{
+				display:none;
+			}
+			.flexslider .slides{
+				height:220px;
+			}
+			.flexslider .slides li>img{
+				height:220px;
+			}
+		}
 		@media screen and (min-width:768px){
 			.header{
 				padding:0 60px;
 			}
 			.list-cont .article-list{
 				padding:0 76px;
-				/*text-align: center;*/
 			}
 			.flexslider{
 				margin-bottom:5px;
