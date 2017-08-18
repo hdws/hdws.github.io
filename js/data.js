@@ -14,7 +14,7 @@ new Vue({
 	    items: [
 	    	{
 				name:'原谅我不懂你的悲伤',
-				author:'叶小松',
+				author:'我给你写信',
 				url:'http://mp.weixin.qq.com/s/8P2Hn0geelCMVDZCvTQjtQ',
 				img:'./images/list_img/article60.jpg'
 			},
