@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《黎明》',
-        url1:'http://mp.weixin.qq.com/s/yMZGDUMxvFOqBpTVpKCDZw',
+        title_1:'最近更新:《原谅我不懂你的悲伤》',
+        url1:'http://mp.weixin.qq.com/s/8P2Hn0geelCMVDZCvTQjtQ',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,12 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'原谅我不懂你的悲伤',
+				author:'叶小松',
+				url:'http://mp.weixin.qq.com/s/8P2Hn0geelCMVDZCvTQjtQ',
+				img:'./images/list_img/article60.jpg'
+			},
 	    	{
 				name:'黎明',
 				author:'叶小松',
