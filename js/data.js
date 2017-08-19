@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《原谅我不懂你的悲伤》',
-        url1:'http://mp.weixin.qq.com/s/8P2Hn0geelCMVDZCvTQjtQ',
+        title_1:'最近更新:《生来是旅人》',
+        url1:'http://mp.weixin.qq.com/s/MFLWU-bYLY7LV1sQVCSIJQ',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,12 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'生来是旅人',
+				author:'泰戈尔',
+				url:'http://mp.weixin.qq.com/s/MFLWU-bYLY7LV1sQVCSIJQ',
+				img:'./images/list_img/article61.jpg'
+			},
 	    	{
 				name:'原谅我不懂你的悲伤',
 				author:'我给你写信',
