@@ -16,22 +16,41 @@
 			width:1050px;
 			height:80px;
 			margin:30px auto;
+			line-height: 80px;
+			font-size:20px;
+			color:#ff8963;
+			text-align: center;
 			border-bottom:1px dashed #999;
 			border-radius: 5px;
 			overflow: hidden;
+			cursor:pointer;
 		}
-		.zhenggao>a{
-			display:block;
-			width:100%;
-			height:80px;
-			line-height: 80px;
-			font-size:24px;
-			color:#ff8963;
+		.lianxi{
+			position:fixed;
+			top:50%;
+			right:10px;
+			margin-top:-25px;
+			padding:5px 0;
+			width:60px;
 			text-align: center;
-			text-decoration: none;
+			border:1px solid #eee;
+			color:#666;
+			cursor:pointer;
 		}
-		.zhenggao:hover>a{
-			color:#ff8963;
+		.erweima{
+			position:fixed;
+			top:50%;
+			right:80px;
+			margin-top:-100px;
+			width:200px;
+			height:200px;
+			border:1px solid #ff8962;
+			display:none;
+		}
+		.erweima img{
+			width:100%;
+			border:none;
+			z-index: 
 		}
 	</style>
 </head>
@@ -49,9 +68,7 @@
 		</div>
 	</div>
 	<div class="zhenggao">
-		<a href="./zhenggao.html" target="_blank">
-			<marquee behavior="" direction="" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()" >走吧走吧，远方一无所有，远方应有尽有。</marquee> 
-		</a>
+		<marquee behavior="" direction="" scrollamount="8" onmouseover="this.stop()" onmouseout="this.start()" >大学生文学作品征稿了！“还读我诗”公众号平台新近推出大学生文学作品专栏，想不想把你自己的故事讲给我们听呢？可将故事以诗歌、小说、散文等形式分享给我们，每篇100元稿酬等你拿哦！投稿邮箱：huanduwoshi2016@126.com，联系方式：Whia2021(个人微信)。</marquee> 
 	</div>
 	<div class="content">
 		<ul class="clearfix">
@@ -91,8 +108,22 @@
 		<p>技术支持: <a class="tongji" href="javascript:;" title="做人如果没有梦想，和咸鱼又有什么区别">Kevin</a></p>
 	</div>
 	<!-- footer end -->
+	<div class="lianxi">投稿<br>联系</div>
+	<div class="erweima">
+		<img src="./images/dacheng.jpg" alt="">
+	</div>
 	<!-- 返回顶部 -->
 	<div class="totop"></div>
+	<script>
+		$(function(){
+			$(".lianxi").mouseover(function(){
+				$(".erweima").fadeIn(500);
+			});
+			$(".lianxi").mouseout(function(){
+				$(".erweima").fadeOut(500);
+			})
+		})
+	</script>
 
 	<script src="./js/totop.js"></script>
 	<script src="./js/bdtj.js"></script>
