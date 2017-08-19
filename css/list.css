@@ -1,6 +1,19 @@
 .header-cont .logo{
 	margin-left:75px;
 }
+.scrolltext{
+	width:1050px;
+	height:80px;
+	margin:0 auto;
+	line-height: 80px;
+	font-size:20px;
+	color:#ff8963;
+	text-align: center;
+	border-bottom:1px dashed #999;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor:pointer;
+}
 .content{
 	margin:0 auto;
 	width:1050px;
