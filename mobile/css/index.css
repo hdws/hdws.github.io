@@ -92,6 +92,12 @@ body{
 .scrolltext .text{
 	margin-left:20px;
 }
+.title{
+	color:#666;
+	text-align: center;
+	font-weight: normal;
+	font-size:26px;
+}
 .list-cont .article-list{
 	display:block;
 	margin:20px 0;
