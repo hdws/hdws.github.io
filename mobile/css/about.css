@@ -47,16 +47,45 @@ body{
 	margin-top:15px;
 	vertical-align: middle;
 }
-h2{
-	margin:20px 15px;
+.part h2{
+	margin:0 15px 10px 15px;
 	margin-top:0;
 	color:#666;
 	font-size:20px;
 	line-height: 50px;
-	border-bottom:1px solid #ff8967;
+	border-bottom:1px solid #ddd;
 }
-.message-box{
-	margin:0 15px;
+.part .msg{
+	margin:5px 15px;
+	font-size:18px;
+	color:#999
+}
+.erweima{
+	margin:30px auto;
+}
+.erweima .img-box{
+	width:200px;
+	height:200px;
+	margin:0 auto;
+}
+.erweima .tip{
+	font-size:16px;
+	color:#999;
+	text-align: center;
+}
+.erweima .img-box img{
+	width:100%;
+}
+.copy{
+	margin-bottom:10px;
+	color:#333;
+	font-size:16px;
+	text-align: center;
+}
+@media screen and (max-width:320px){
+	.part .msg{
+		font-size:16px;
+	}
 }
 @media screen and (min-width:768px){
 	.header{
@@ -65,7 +94,7 @@ h2{
 	h2{
 		margin:20px 76px;
 	}
-	.message-box{
+	.part{
 		padding:0 76px;
 	}
 }
