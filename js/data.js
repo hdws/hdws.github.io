@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《生来是旅人》',
-        url1:'http://mp.weixin.qq.com/s/MFLWU-bYLY7LV1sQVCSIJQ',
+        title_1:'最近更新:《三岔口的主观记事》',
+        url1:'http://mp.weixin.qq.com/s/4N6GUiq2t4PNT8bu5t2fOQ',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,12 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'三岔口的主观记事',
+				author:'何婷',
+				url:'http://mp.weixin.qq.com/s/4N6GUiq2t4PNT8bu5t2fOQ',
+				img:'./images/list_img/article62.jpg'
+			},
 	    	{
 				name:'生来是旅人',
 				author:'泰戈尔',
