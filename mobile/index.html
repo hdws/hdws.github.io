@@ -55,7 +55,7 @@
     </div>
 	<h2 class="title mt10">往期欣赏</h2>
 	<div id="article" class="list-cont">
-		<div class="article-list" v-for="item in items">
+		<div class="article-list" v-clock v-for="item in items">
 			<a v-bind:href="item.url">{{item.name}} <span>｜ {{item.author}}</span></a>
 		</div>
 	</div>
