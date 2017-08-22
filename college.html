@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>还读我诗，往期优秀诗篇</title>
+	<title>大学生文学作品征稿了！</title>
 	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 	<meta name="keywords" content="" />
@@ -25,34 +25,16 @@
 			</ul>
 		</div>
 	</div>
-	<div class="scrolltext">
-		<marquee behavior="" direction="" scrollamount="8" onmouseover="this.stop()" onmouseout="this.start()" >大学生文学作品征稿了！“还读我诗”公众号平台新近推出大学生文学作品专栏，想不想把你自己的故事讲给我们听呢？可将故事以诗歌、小说、散文等形式分享给我们，每篇100元稿酬等你拿哦！投稿邮箱：huanduwoshi2016@126.com，联系方式：Whia2021(个人微信)。</marquee> 
+	<div id="scrolltext" class="scrolltext">
+		<marquee behavior="" direction="" scrollamount="8" onmouseover="this.stop()" onmouseout="this.start()" >{{text}}</marquee> 
 	</div>
 	<div class="content">
-		<ul class="clearfix">
-			<li>
+		<ul id="college" class="clearfix">
+			<li v-for="item in items">
 				<div class="img-box">
-					<img src="./images/list_img/article60.jpg" alt="">
+					<img v-bind:src="item.img" alt="">
 				</div>
-				<p class="msg"><a href="http://mp.weixin.qq.com/s/8P2Hn0geelCMVDZCvTQjtQ" target="_blank">原谅我不懂你的悲伤 |  我给你写信</a></p>
-			</li>
-			<li>
-				<div class="img-box">
-					<img src="./images/list_img/article57.jpg" alt="">
-				</div>
-				<p class="msg"><a href="http://mp.weixin.qq.com/s/9K9NNx1ARfeUMjWSV1ddlg" target="_blank">绿豆冰糕 |  屈月</a></p>
-			</li>
-			<li>
-				<div class="img-box">
-					<img src="./images/list_img/article55.jpg" alt="">
-				</div>
-				<p class="msg"><a href="http://mp.weixin.qq.com/s/yfk8hJCTaDnqEjG5WBrvTw" target="_blank">不再仰望星空 |  禾火</a></p>
-			</li>
-			<li>
-				<div class="img-box">
-					<img src="./images/list_img/article54.jpg" alt="">
-				</div>
-				<p class="msg"><a href="http://mp.weixin.qq.com/s/kV59muE1fWLXVAlyGm1IrQ" target="_blank">这本书永远都读不完 |  我给你写信</a></p>
+				<p class="msg"><a v-bind:href="item.url" target="_blank">{{item.name}} |  {{item.author}}</a></p>
 			</li>
 		</ul>
 	</div>
@@ -88,7 +70,8 @@
 			})
 		})
 	</script>
-
+	<script src="./js/vue.min.js"></script>
+	<script src="./js/college.js"></script>
 	<script src="./js/totop.js"></script>
 	<script src="./js/bdtj.js"></script>
 </body>
