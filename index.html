@@ -32,7 +32,7 @@
 	<!-- header end -->
 	<!-- banner begin -->
 	<div class="banner">
-		<div class="b-img" id="newArticle">
+		<div class="b-img" id="newArticle" v-clock>
 			<div class="img-list" style="background:url(images/banner1.jpg) center no-repeat;">
 				<p class="text"><a v-bind:href="url1" target="_blank">{{title_1}}</a></p>
 			</div>
@@ -55,7 +55,7 @@
 		<!-- name end -->
 		<h2>佳作推荐</h2>
 		<div class="article-cont">
-			<ul id="onShow" class="clearfix">
+			<ul id="onShow" class="clearfix" v-clock>
 				<li v-for="item in items">
 					<div class="img-box"><img v-bind:src="item.img" alt=""></div>
 					<a class="title" v-bind:href="item.url" target="_blank">{{item.name}} <span>｜ {{item.author}}</span></a>

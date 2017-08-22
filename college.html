@@ -25,11 +25,11 @@
 			</ul>
 		</div>
 	</div>
-	<div id="scrolltext" class="scrolltext">
+	<div id="scrolltext" class="scrolltext" v-clock>
 		<marquee behavior="" direction="" scrollamount="8" onmouseover="this.stop()" onmouseout="this.start()" >{{text}}</marquee> 
 	</div>
 	<div class="content">
-		<ul id="college" class="clearfix">
+		<ul id="college" class="clearfix" v-clock>
 			<li v-for="item in items">
 				<div class="img-box">
 					<img v-bind:src="item.img" alt="">
