@@ -90,6 +90,17 @@
 .content ul li a:hover{
 	color:#ff8c69;
 }
+.content .msg .title{
+	width:222px;
+	white-space:nowrap;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.content .msg .time{
+	display:inline-block;
+	float:right;
+	color:#666;
+}
 .lianxi{
 	position:fixed;
 	top:50%;
