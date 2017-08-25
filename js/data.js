@@ -1,7 +1,7 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《咖啡喝坏了》',
+        title_1:'最近更新:《从故乡到远方，一人过四季》',
         url1:'http://mp.weixin.qq.com/s/IRGJou-uqc5rfVdRBc876w',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'从故乡到远方，一人过四季',
+				author:'梁晓莹',
+				time:'2017/08/25',
+				url:'javascript:alert("亲，还没更新，稍等哦～");',
+				img:'./images/list_img/article32.jpg'
+			},
 	    	{
 				name:'咖啡喝坏了',
 				author:'青叶若叶',
