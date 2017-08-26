@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《从故乡到远方，一人过四季》',
-        url1:'http://mp.weixin.qq.com/s/IRGJou-uqc5rfVdRBc876w',
+        title_1:'最近更新:《来自一名建筑汪的内心OS》',
+        url1:'http://mp.weixin.qq.com/s/GqjxGrPu2UxaJX4HehvBDQ',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -13,10 +13,10 @@ new Vue({
 	data: {
 	    items: [
 	    	{
-				name:'从故乡到远方，一人过四季',
-				author:'梁晓莹',
+				name:'来自一名建筑汪的内心OS',
+				author:'archiworld',
 				time:'2017/08/25',
-				url:'javascript:alert("亲，还没更新，稍等哦～");',
+				url:'http://mp.weixin.qq.com/s/GqjxGrPu2UxaJX4HehvBDQ',
 				img:'./images/list_img/article32.jpg'
 			},
 	    	{
