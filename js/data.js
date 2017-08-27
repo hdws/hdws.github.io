@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《来自一名建筑汪的内心OS》',
-        url1:'http://mp.weixin.qq.com/s/GqjxGrPu2UxaJX4HehvBDQ',
+        title_1:'最近更新:《孩子，你从哪里来》',
+        url1:'http://mp.weixin.qq.com/s/kzuUvXThAhT0NgdXFq-KQg',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'孩子，你从哪里来',
+				author:'永殊',
+				time:'2017/08/26',
+				url:'http://mp.weixin.qq.com/s/kzuUvXThAhT0NgdXFq-KQg',
+				img:'./images/list_img/article20.jpg'
+			},
 	    	{
 				name:'来自一名建筑汪的内心OS',
 				author:'archiworld',
