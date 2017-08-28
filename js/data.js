@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《孩子，你从哪里来》',
-        url1:'http://mp.weixin.qq.com/s/kzuUvXThAhT0NgdXFq-KQg',
+        title_1:'最近更新:《飞进哪一扇半掩的芳菲》',
+        url1:'http://mp.weixin.qq.com/s/SEYcIQWPiBqqLVcfJX1aFw',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'飞进哪一扇半掩的芳菲',
+				author:'郭辉',
+				time:'2017/08/28',
+				url:'http://mp.weixin.qq.com/s/SEYcIQWPiBqqLVcfJX1aFw',
+				img:'./images/list_img/article39.jpg'
+			},
 	    	{
 				name:'孩子，你从哪里来',
 				author:'永殊',
