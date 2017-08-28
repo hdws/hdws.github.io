@@ -1,18 +1,41 @@
 .header-cont .logo{
 	margin-left:75px;
 }
+// .scrolltext{
+// 	width:1050px;
+// 	height:80px;
+// 	margin:0 auto;
+// 	line-height: 80px;
+// 	font-size:20px;
+// 	color:#ff8963;
+// 	text-align: center;
+// 	border-bottom:1px dashed #999;
+// 	border-radius: 5px;
+// 	overflow: hidden;
+// 	cursor:pointer;
+// }
 .scrolltext{
-	width:1050px;
+	position:relative;
+	width:1050px; 
+	margin:0 auto; 
 	height:80px;
-	margin:0 auto;
-	line-height: 80px;
-	font-size:20px;
-	color:#ff8963;
-	text-align: center;
-	border-bottom:1px dashed #999;
-	border-radius: 5px;
+	border-bottom: 1px dashed #999;
 	overflow: hidden;
-	cursor:pointer;
+}
+.scrolltext ul{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.scrolltext ul li{
+	float:left;
+	list-style: none;
+	width:3500px;
+	height:80px;
+	line-height: 80px;
+	color:#ff8963;
+	font-size:20px;
+	text-indent: 1050px;
 }
 .content{
 	margin:0 auto;

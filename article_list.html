@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" href="./images/hdws.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/list.css">
+	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -23,9 +24,13 @@
 			</ul>
 		</div>
 	</div>
-	<div class="scrolltext">
-		<marquee behavior="" direction="" scrollamount="8" onmouseover="this.stop()" onmouseout="this.start()" >"还读我诗"公众号平台征稿啦！诗歌、小说、散文等，题材不限，稿酬30元／篇，奖金根据阅读量累计。可推荐投稿，一经采用有20元／篇酬谢推荐者。投稿邮箱：huanduwoshi2016@126.com，联系方式：Whia2021(个人微信)，欢迎大家的参与！</marquee> 
+	<!-- scrolltext  begin -->
+	<div id="scrolltext" class="scrolltext" v-clock>
+		<ul class="clearfix">
+			<li>"还读我诗"公众号平台征稿啦！诗歌、小说、散文等，题材不限，稿酬30元／篇，奖金根据阅读量累计。可推荐投稿，一经采用有20元／篇酬谢推荐者。投稿邮箱：huanduwoshi2016@126.com，联系方式：Whia2021(个人微信)，欢迎大家的参与！</li>
+		</ul>
 	</div>
+	<!-- scrolltext  end -->
 	<div class="content">
 		<ul id="article" class="clearfix" v-clock>
 			<li v-for="item in items">
@@ -68,8 +73,8 @@
 	<!-- 返回顶部 -->
 	<div class="totop"></div>
 
-	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
 	<!-- <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script> -->
+	<script src="./js/scrolltext.js"></script>
 	<script src="./js/totop.js"></script>
 	<script src="./js/bdtj.js"></script>
 	<script src="./js/vue.min.js"></script>
