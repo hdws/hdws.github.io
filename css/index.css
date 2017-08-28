@@ -10,7 +10,8 @@ body{
 	min-width: 1400px;
 }
 .banner{ 
-	width:100%; 
+	width:100%;
+	min-width: 1400px; 
 	height:750px; 
 	margin-bottom:60px; 
 	overflow:hidden; 
