@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《飞进哪一扇半掩的芳菲》',
-        url1:'http://mp.weixin.qq.com/s/SEYcIQWPiBqqLVcfJX1aFw',
+        title_1:'最近更新:《爱是动词》',
+        url1:'http://mp.weixin.qq.com/s/J4muqoA5uKu5ZR9Tu_oqVA',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'爱是动词',
+				author:'郭辉',
+				time:'2017/08/30',
+				url:'http://mp.weixin.qq.com/s/J4muqoA5uKu5ZR9Tu_oqVA',
+				img:'./images/list_img/article29.jpg'
+			},
 	    	{
 				name:'飞进哪一扇半掩的芳菲',
 				author:'郭辉',
