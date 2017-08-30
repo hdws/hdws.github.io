@@ -14,7 +14,7 @@ new Vue({
 	    items: [
 	    	{
 				name:'爱是动词',
-				author:'郭辉',
+				author:'叶小松',
 				time:'2017/08/30',
 				url:'http://mp.weixin.qq.com/s/J4muqoA5uKu5ZR9Tu_oqVA',
 				img:'./images/list_img/article29.jpg'
