@@ -30,15 +30,21 @@
 	<!-- header end -->
 	<!-- banner begin -->
 	<div class="banner">
-		<div class="b-img" id="newArticle" v-clock>
-			<div class="img-list" style="background:url(images/banner1.jpg) center no-repeat;">
-				<p class="text"><a v-bind:href="url1" target="_blank">{{title_1}}</a></p>
-			</div>
-			<div class="img-list" style="background:url(images/banner2.jpg) center no-repeat;">
-				<p class="text"><a v-bind:href="url2" target="_blank">{{title_2}}</a></p>
-			</div>
-		</div>
-		<a class="bar-left" href="#"><em></em></a><a class="bar-right" href="#"><em></em></a>
+    	<div class="banner_main" id="newArticle" v-clock>
+        	<ul class="banner_ul">
+            	<li>
+                	<img src="images/banner1.jpg"  alt="" />
+                	<p class="text"><a v-bind:href="url1" target="_blank">{{title_1}}</a></p>
+            	</li>
+            	<li>
+                	<img src="images/banner2.jpg"  alt="" />
+                	<p class="text"><a v-bind:href="url2" target="_blank">{{title_2}}</a></p>
+            	</li>
+            
+        	</ul>
+    	</div>
+    	<div class="banner_left"><em></em></div>
+    	<div class="banner_right"><em></em></div>
 	</div>
 	<!-- banner end -->
 	<!-- cont-box begin -->
