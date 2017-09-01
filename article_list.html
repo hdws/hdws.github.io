@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/list.css">
 	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
 </head>
 <body class="noselect">
 	<div class="header">
@@ -34,8 +35,11 @@
 	<div class="content">
 		<ul id="article" class="clearfix" v-clock>
 			<li v-for="item in items">
-				<div class="img-box">
+				<!-- <div class="img-box">
 					<img v-bind:src="item.img" alt="">
+				</div> -->
+				<div class="img-box">
+					<img class="lazy" width="640" height="480" v-bind:data-original="item.img" alt="">
 				</div>
 				<p class="msg clearfix"><a class="title" v-bind:href="item.url" target="_blank">{{item.name}} |  {{item.author}}</a><span class="time">{{item.time}}</span></p>
 			</li>
@@ -63,6 +67,13 @@
 			<img src="./images/dacheng.jpg" alt="">
 		</div>
 	</div>
+	<script>
+		$(function(){
+			$("img.lazy").lazyload({
+    			threshold : 200
+			});
+		})
+	</script>
 	<script>
 		$(function(){
 			$(".lianxi").mouseover(function(){
