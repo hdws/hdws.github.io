@@ -61,7 +61,7 @@
 		<div class="article-cont">
 			<ul id="onShow" class="clearfix" v-clock>
 				<li v-for="item in items">
-					<div class="img-box"><img v-bind:src="item.img" alt=""></div>
+					<div class="img-box"><img class="lazy" width="575" height="400" v-bind:data-original="item.img" alt=""></div>
 					<a class="title" v-bind:href="item.url" target="_blank">{{item.name}} <span>｜ {{item.author}}</span></a>
 					<p class="say">{{item.say}}</p>
 				</li>
@@ -88,9 +88,17 @@
 	<!-- 返回顶部 -->
 	<div class="totop"></div>
 	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+	<script src="./js/jquery.lazyload.min.js"></script>
 	<script src="./js/bdtj.js"></script>
 	<script src="./js/banner.js"></script>
 	<script src="./js/totop.js"></script>
+	<script>
+		$(function(){
+			$("img.lazy").lazyload({
+    			threshold : 200
+			});
+		})
+	</script>
 	<script>
 	$(document).ready(function() {
         var explorer = navigator.userAgent;
