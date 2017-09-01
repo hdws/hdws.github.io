@@ -118,7 +118,7 @@ a:active{
 	-moz-user-focus: none;
 	-moz-user-select: none;
 }
-
+a:focus{outline:none;}
 .totop{
 	position:fixed;
 	right:20px;
@@ -175,7 +175,6 @@ a:active{
     display:inline-block;
     width:12px;
     height:14px;
-    // vertical-align:-2px;
     vertical-align:text-top;
     margin-top:2px;
     margin-right:5px;
@@ -209,7 +208,6 @@ a:active{
     height:8px;
     width:8px;
     margin-top:3px;
-    // vertical-align: 1px;
     vertical-align:text-top;
     background: url(../images/browser/iefixed-sprite.png) 0 -24px no-repeat;
 }
