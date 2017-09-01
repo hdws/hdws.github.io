@@ -8,6 +8,7 @@
 	height:80px;
 	border-bottom: 1px dashed #999;
 	overflow: hidden;
+	cursor:pointer;
 }
 .scrolltext ul{
 	position:absolute;
@@ -111,7 +112,7 @@
 	float:right;
 	color:#666;
 }
-.lianxi{
+.rightfixed .lianxi{
 	position:fixed;
 	top:50%;
 	right:10px;
@@ -123,17 +124,30 @@
 	color:#666;
 	cursor:pointer;
 }
-.erweima{
+.rightfixed .arrow_right { 
+	display:none; 
+	position:fixed;
+	top:50%;
+	right:70px;
+	margin-top:-5px;
+    font-size: 0;  
+    line-height: 0;  
+    border: 12px solid #ff8963;   
+    border-right-width: 0;     
+    border-top-color: transparent;  
+    border-bottom-color: transparent;  
+}
+.rightfixed .erweima{
 	position:fixed;
 	top:50%;
 	right:80px;
 	margin-top:-100px;
 	width:200px;
 	height:200px;
-	border:1px solid #ff8962;
+	border:1px solid #ff8963;
 	display:none;
 }
-.erweima img{
+.rightfixed .erweima img{
 	width:100%;
 	border:none;
 	z-index: 

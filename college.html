@@ -56,9 +56,12 @@
 		<p>技术支持: <a class="tongji" href="javascript:;" title="做人如果没有梦想，和咸鱼又有什么区别">Kevin</a></p>
 	</div>
 	<!-- footer end -->
-	<div class="lianxi noselect">投稿<br>联系</div>
-	<div class="erweima">
-		<img src="./images/dacheng.jpg" alt="">
+	<div class="rightfixed">
+		<div class="lianxi">投稿<br />联系</div>
+		<span class="arrow_right"></span>  
+		<div class="erweima">
+			<img src="./images/dacheng.jpg" alt="">
+		</div>
 	</div>
 	<!-- 返回顶部 -->
 	<div class="totop"></div>
@@ -66,9 +69,11 @@
 		$(function(){
 			$(".lianxi").mouseover(function(){
 				$(".erweima").fadeIn(500);
+				$(".arrow_right").fadeIn(500);
 			});
 			$(".lianxi").mouseout(function(){
 				$(".erweima").fadeOut(500);
+				$(".arrow_right").fadeOut(500);
 			})
 		})
 	</script>
