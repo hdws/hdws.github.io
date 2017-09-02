@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《从前父爱如山，现在我做你的靠山》',
-        url1:'http://mp.weixin.qq.com/s/PgAj133qWf40809_kpE78w',
+        title_1:'最近更新:《女人的手》',
+        url1:'http://mp.weixin.qq.com/s/VZCGCXfdWgTR-ZU0HBAh1Q',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'女人的手',
+				author:'迟子建',
+				time:'2017/09/02',
+				url:'http://mp.weixin.qq.com/s/VZCGCXfdWgTR-ZU0HBAh1Q',
+				img:'./images/list_img/article02.jpg'
+			},
 	    	{
 				name:'从前父爱如山，现在我做你的靠山',
 				author:'吴牛',

@@ -10,6 +10,8 @@
 	<link rel="shortcut icon" href="./images/hdws.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+	<script src="./js/hand_device.js"></script>
 </head>
 <body class="noselect">
 	<!-- <audio id="audio" preload="auto" controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">
@@ -87,7 +89,6 @@
 	<!-- footer end -->
 	<!-- 返回顶部 -->
 	<div class="totop"></div>
-	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
 	<script src="./js/jquery.lazyload.min.js"></script>
 	<script src="./js/bdtj.js"></script>
 	<script src="./js/banner.js"></script>
@@ -99,23 +100,6 @@
 			});
 		})
 	</script>
-	<script>
-	$(document).ready(function() {
-        var explorer = navigator.userAgent;
-        var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
-        var flag = true;
-        for (var i = 0; i < Agents.length; i++) {
-            if (explorer.indexOf(Agents[i]) > 0) {
-                flag = false;
-                break;
-            }
-        }
-        if (!flag) {
-            window.location.href = "./mobile/index.html";//手机
-        }
-    });
-	</script>
-
 	<script src="./js/vue.min.js"></script>
 	<script src="./js/data.js"></script>
 </body>
