@@ -9,6 +9,12 @@ new Vue({
 	data: {
 	    items: [
 	    	{
+				name:'孩子，你从哪里来',
+				author:'永殊',
+				url:'http://mp.weixin.qq.com/s/kzuUvXThAhT0NgdXFq-KQg',
+				img:'./images/list_img/article20.jpg'
+			},
+	    	{
 				name:'三岔口的主观记事',
 				author:'何婷',
 				url:'http://mp.weixin.qq.com/s/4N6GUiq2t4PNT8bu5t2fOQ',
