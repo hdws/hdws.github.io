@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《女人的手》',
-        url1:'http://mp.weixin.qq.com/s/VZCGCXfdWgTR-ZU0HBAh1Q',
+        title_1:'最近更新:《外公》',
+        url1:'http://mp.weixin.qq.com/s/KMZEXxraW4mYpHwtxDRkKA',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'外公',
+				author:'糕叔',
+				time:'2017/09/04',
+				url:'http://mp.weixin.qq.com/s/KMZEXxraW4mYpHwtxDRkKA',
+				img:'./images/list_img/article16.jpg'
+			},
 	    	{
 				name:'女人的手',
 				author:'迟子建',
