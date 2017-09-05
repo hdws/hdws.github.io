@@ -52,11 +52,13 @@
 	color:#666;
 }
 .content ul li .img-box{
+	display:block;
 	float:left;
 	margin-bottom:10px;
 	width:330px;
 	height:200px;
 	overflow: hidden;
+	cursor:pointer;
 	// position:relative;
 }
 // .content ul li .img-box .cover{
@@ -119,6 +121,7 @@
 	margin-top:-25px;
 	padding:5px 0;
 	width:55px;
+	background: #fff;
 	text-align: center;
 	border:1px solid #eee;
 	color:#666;

@@ -38,9 +38,9 @@
 				<!-- <div class="img-box">
 					<img v-bind:src="item.img" alt="">
 				</div> -->
-				<div class="img-box">
+				<a class="img-box" v-bind:href="item.url" target="_blank">
 					<img class="lazy" width="330" height="200" v-bind:data-original="item.img" alt="">
-				</div>
+				</a>
 				<p class="msg clearfix"><a class="title" v-bind:href="item.url" target="_blank">{{item.name}} |  {{item.author}}</a><span class="time">{{item.time}}</span></p>
 			</li>
 		</ul>

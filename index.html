@@ -63,7 +63,7 @@
 		<div class="article-cont">
 			<ul id="onShow" class="clearfix" v-clock>
 				<li v-for="item in items">
-					<div class="img-box"><img class="lazy" width="575" height="400" v-bind:data-original="item.img" alt=""></div>
+					<a class="img-box" v-bind:href="item.url" target="_blank"><img class="lazy" width="575" height="400" v-bind:data-original="item.img" alt=""></a>
 					<a class="title" v-bind:href="item.url" target="_blank">{{item.name}} <span>｜ {{item.author}}</span></a>
 					<p class="say">{{item.say}}</p>
 				</li>

@@ -35,9 +35,9 @@
 	<div class="content">
 		<ul id="college" class="clearfix" v-clock>
 			<li v-for="item in items">
-				<div class="img-box">
+				<a class="img-box" v-bind:href="item.url" target="_blank">
 					<img class="lazy" width="330" height="200" v-bind:data-original="item.img" alt="">
-				</div>
+				</a>
 				<p class="msg"><a v-bind:href="item.url" target="_blank">{{item.name}} |  {{item.author}}</a></p>
 			</li>
 		</ul>
