@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《外公》',
-        url1:'http://mp.weixin.qq.com/s/KMZEXxraW4mYpHwtxDRkKA',
+        title_1:'最近更新:《失去诗题的诗》',
+        url1:'http://mp.weixin.qq.com/s/-ldBu3UreM4TadKPEC8Yog',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'失去诗题的诗',
+				author:'叶小松',
+				time:'2017/09/06',
+				url:'http://mp.weixin.qq.com/s/-ldBu3UreM4TadKPEC8Yog',
+				img:'./images/list_img/article64.jpg'
+			},
 	    	{
 				name:'外公',
 				author:'糕叔',
