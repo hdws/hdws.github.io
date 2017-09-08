@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《失去诗题的诗》',
-        url1:'http://mp.weixin.qq.com/s/-ldBu3UreM4TadKPEC8Yog',
+        title_1:'最近更新:《还想再掬一捧碧绿入心房》',
+        url1:'http://mp.weixin.qq.com/s/7spMYNs_kbNos8H8mVznEw',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'还想再掬一捧碧绿入心房',
+				author:'刈剩稻香',
+				time:'2017/09/08',
+				url:'http://mp.weixin.qq.com/s/7spMYNs_kbNos8H8mVznEw',
+				img:'./images/list_img/article65.jpg'
+			},
 	    	{
 				name:'失去诗题的诗',
 				author:'叶小松',
