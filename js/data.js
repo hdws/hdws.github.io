@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《还想再掬一捧碧绿入心房》',
-        url1:'http://mp.weixin.qq.com/s/7spMYNs_kbNos8H8mVznEw',
+        title_1:'最近更新:《我的老师 | 魏巍》',
+        url1:'http://mp.weixin.qq.com/s/OS4cjheEOVVy72cV8R_fpw',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'我的老师',
+				author:'魏巍',
+				time:'2017/09/09',
+				url:'http://mp.weixin.qq.com/s/OS4cjheEOVVy72cV8R_fpw',
+				img:'./images/list_img/article66.jpg'
+			},
 	    	{
 				name:'还想再掬一捧碧绿入心房',
 				author:'刈剩稻香',
