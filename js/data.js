@@ -13,6 +13,20 @@ new Vue({
 	data: {
 	    items: [
 	    	{
+				name:'雪:血',
+				author:'可亭',
+				time:'2017/09/13',
+				url:'http://mp.weixin.qq.com/s/nqo6cPMzV9f0JTHldORkJg',
+				img:'./images/list_img/article68.jpg'
+			},
+	    	{
+				name:'我背叛着神，挑剔一个清晨',
+				author:'刈剩稻香',
+				time:'2017/09/11',
+				url:'http://mp.weixin.qq.com/s/rGyqT8-Eo_zcMJqeGSCp-w',
+				img:'./images/list_img/article67.jpg'
+			},
+	    	{
 				name:'我的老师',
 				author:'魏巍',
 				time:'2017/09/09',
