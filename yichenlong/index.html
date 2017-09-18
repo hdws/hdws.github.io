@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>嘉兴亿宸龙箱包有限公司</title>
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/slide.css">
+	<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+	<!-- header begin -->
+	<div class="header">
+		<div class="header_cont clearfix">
+			<div class="logo"><a href="./index.html">嘉兴亿宸龙箱包有限公司</a></div>
+			<div class="right_msg">专业·诚信·务实·发展</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- banner begin -->
+	<div class="banner">
+		<img src="./images/banner.jpg" alt="">
+	</div>
+	<!-- banner end -->
+	<!-- main begin -->
+	<div class="main">
+		<div class="section">
+			<h2>关于亿宸龙</h2>
+			<div class="about_msg">亿宸龙箱包有限公司位于浙江省嘉兴市，公司厂房总面积约15000平方米。目前员工约220人，其中生产管理和办公室人员35人。公司配有专门的开发部门，可以满足每月50只样品的打样。公司新进标准国标测试机器，包括轮子跑步机，拉杆手把震荡测试机，箱子跌落测试机，板材耐冲击测试机等。工厂目前共有5条生产线。1条镁铝合金拉杆箱生产线；3条铝框箱生产线；1条拉链箱生产线。平均日产量500只。公司计划1-2月内将再建1条拉链箱生产线。亿宸龙欢迎国内外客户的到来！</div>
+		</div>
+		<div class="section">
+			<h2>产品展示</h2>
+			<ul class="product clearfix">
+				<li><img src="./images/product.png" alt=""></li>
+				<li><img src="./images/product.png" alt=""></li>
+				<li><img src="./images/product.png" alt=""></li>
+				<li><img src="./images/product.png" alt=""></li>
+				<li><img src="./images/product.png" alt=""></li>
+				<li><img src="./images/product.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="section">
+			<h2>合作客户</h2>
+			<ul class="custom clearfix">
+				<li>Calvin Klein</li>
+				<li>TOMMY-HILFIGER</li>
+				<li>Traveller's choice</li>
+				<li>American tourister EF</li>
+				<li>NEWEST</li>
+				<li>DUNLOP</li>
+				<li>MEXICAN</li>
+				<li>SCC</li>
+				<li>HANNASHOP</li>
+				<li>Life VC</li>
+				<li>rienda</li>
+				<li>Ricado合作洽谈中</li>
+				<li>...</li>
+			</ul>
+		</div>
+		<div class="section contact">
+			<h2>联系我们</h2>
+			<p class="msg_list">电话：0573-85980661</p>
+			<p class="msg_list">传真：0573-85980661</p>
+			<p class="msg_list">邮箱：liu-colin@foxmail.com</p>
+			<p class="msg_list">邮编：314213</p>
+			<p class="msg_list">地址：嘉兴市·平湖市·钟埭镇真圣路98号</p>
+		</div>
+	</div>
+	<!-- main end -->
+	<!-- footer begin -->
+	<div class="footer">Copyright © 2016-2017 嘉兴亿宸龙箱包有限公司 All Rights Reversed </div>
+	<!-- footer end -->
+	<!--右侧悬浮菜单 开始-->
+	<div class="slide">
+		<ul class="icon">
+			<!-- <li class="up" title="上一页"></li> -->
+			<li class="qq"></li>
+			<li class="tel"></li>
+			<li class="wx"></li>
+			<!-- <li class="down" title="下一页"></li> -->
+		</ul>
+		<ul class="info">
+			<li class="qq">
+				<p>在线沟通，请点我<a href="http://wpa.qq.com/msgrd?v=3&uin=1358295745&site=qq&menu=yes" target="_blank">在线咨询</a></p>
+			</li>
+			<li class="tel">
+				<p>咨询热线：<br>0573-85980661<br>传真：<br>0573-85980661</p>
+			</li>
+			<li class="wx">
+				<div class="img"><img src="./images/manager.jpg" /></div>
+			</li>
+		</ul>
+	</div>
+	<!--右侧悬浮菜单 结束-->
+	
+
+	<script type="text/javascript">
+$(function(){
+
+	$('.slide .icon li').not('.up,.down').mouseenter(function(){
+		$('.slide .info').addClass('hover');
+		$('.slide .info li').hide();
+		$('.slide .info li.'+$(this).attr('class')).show();//.slide .info li.qq
+	});
+	$('.slide').mouseleave(function(){
+		$('.slide .info').removeClass('hover');
+	});
+});
+</script>
+
+</body>
+</html>

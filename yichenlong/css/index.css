@@ -1,0 +1,128 @@
+body{
+	position: relative;
+	background: #fff;
+	min-width: 1100px;
+}
+.header{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:80px;
+	background: #fff;
+	line-height: 80px;
+	border-bottom:1px solid #eee;
+	z-index: 2;
+}
+.header .header_cont{
+	width:1100px;
+	margin:0 auto;
+}
+.header_cont .logo{
+	float:left;
+}
+.header_cont .logo a{
+	font-size:32px;
+	color:teal;
+	text-decoration: none;
+	cursor:pointer;
+}
+.header_cont .right_msg{
+	float:right;
+	font-size: 20px;
+	color:#999;
+}
+.banner{
+	width:100%;
+	height:552px;
+}
+.banner img{
+	width:100%;
+	height:552px;
+	min-width: 1100px;
+}
+.main{
+	width:1100px;
+	height:auto;
+	margin:50px auto;
+	overflow: hidden;
+}
+.main .section{
+	width:100%;
+	margin:50px 0;
+	overflow: hidden;
+}
+.main .section h2{
+	width:200px;
+	height:60px;
+	margin:0 auto;
+	margin-bottom:50px;
+	border-bottom:2px solid teal;
+	line-height: 60px;
+	font-size:32px;
+	color:#151515;
+	font-weight: normal;
+	text-align: center;
+}
+.main .section .about_msg{
+	color:#666;
+	font-size:24px;
+	line-height: 40px;
+	text-align: justify;
+	text-indent: 48px;
+}
+.main .section .product{
+	list-style: none;
+	margin-right:-50px;
+	margin-bottom:-50px;
+
+}
+.main .section .product>li{
+	float:left;
+	width:333px;
+	height:246px;
+	margin-right: 50px;
+	margin-bottom:50px;
+}
+.main .section .product li img{
+	width:100%;
+}
+.main .section .custom{
+	margin:30px 0;
+	margin-right:-25px;
+	overflow: hidden;
+	list-style: none;
+}
+.main .section .custom li{
+	float:left;
+	width:198px;
+	height:66px;
+	color:#666;
+	line-height: 66px;
+	text-align: center;
+	margin-right:25px;
+	margin-bottom:25px;
+	border:1px solid #ddd;
+}
+.main .section .custom li:hover{
+	border:1px solid teal;
+	color:teal;
+}
+.main .section.contact .msg_list{
+	margin-bottom: 10px;
+	color:#666;
+	font-size:24px;
+	text-align: center;
+}
+.footer{
+	width:100%;
+	height:80px;
+	position:relative;
+	bottom:0;
+	left:0;
+	line-height: 80px;
+	text-align: center;
+	font-size:20px;
+	background: #838584;
+	color:#fefefc;
+}
