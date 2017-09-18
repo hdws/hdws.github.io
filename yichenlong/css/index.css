@@ -108,7 +108,9 @@ body{
 }
 .main .section .custom li:hover{
 	border:1px solid teal;
-	color:teal;
+	// color:teal;
+	background: teal;
+	color:#fff;
 }
 .main .section.contact .msg_list{
 	margin-bottom: 10px;
