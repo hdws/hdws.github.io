@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>嘉兴亿宸龙箱包有限公司</title>
+	<title>嘉兴亿宸龙箱包有限公司欢迎您！</title>
 	<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 	<meta name="keywords" content="" />
@@ -77,11 +77,9 @@
 	<!--右侧悬浮菜单 开始-->
 	<div class="slide">
 		<ul class="icon">
-			<!-- <li class="up" title="上一页"></li> -->
 			<li class="qq"></li>
 			<li class="tel"></li>
 			<li class="wx"></li>
-			<!-- <li class="down" title="下一页"></li> -->
 		</ul>
 		<ul class="info">
 			<li class="qq">
@@ -99,18 +97,17 @@
 	
 
 	<script type="text/javascript">
-$(function(){
-
-	$('.slide .icon li').not('.up,.down').mouseenter(function(){
-		$('.slide .info').addClass('hover');
-		$('.slide .info li').hide();
-		$('.slide .info li.'+$(this).attr('class')).show();//.slide .info li.qq
-	});
-	$('.slide').mouseleave(function(){
-		$('.slide .info').removeClass('hover');
-	});
-});
-</script>
+		$(function(){
+			$('.slide .icon li').not('.up,.down').mouseenter(function(){
+				$('.slide .info').addClass('hover');
+				$('.slide .info li').hide();
+				$('.slide .info li.'+$(this).attr('class')).show();
+			});
+			$('.slide').mouseleave(function(){
+				$('.slide .info').removeClass('hover');
+			});
+		});
+	</script>
 
 </body>
 </html>
