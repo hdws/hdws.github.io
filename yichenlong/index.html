@@ -41,14 +41,38 @@
 		</div>
 		<div class="section">
 			<h2>产品展示</h2>
-			<ul class="product clearfix">
-				<li><img src="./images/product.png" alt=""></li>
-				<li><img src="./images/product.png" alt=""></li>
-				<li><img src="./images/product.png" alt=""></li>
-				<li><img src="./images/product.png" alt=""></li>
-				<li><img src="./images/product.png" alt=""></li>
-				<li><img src="./images/product.png" alt=""></li>
-			</ul>
+			<div class="contant">
+				<ul id="demo1" class="clearfix">
+					<li><a href="javascript:;">M-901#</a></li>
+					<li><a href="javascript:;">M-902#</a></li>
+					<li><a href="javascript:;">M-903#</a></li>
+				</ul>
+				<div class="tab-cont">
+					<div class="item-box clearfix">
+						<!-- <a href="javascript:;" class="img_box">
+							<p>型号：M-901#</p>
+							<p>材质：不清楚</p>
+							<p>尺寸：100cm＊100cm</p>
+						</a> -->
+						<a href="javascript:;" class="img_box"><img src="./images/product/901_1.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/901_2.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/901_3.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/901_4.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/901_5.jpg" alt=""></a>
+					</div>
+					<div class="item-box clearfix">
+						<a href="javascript:;" class="img_box"><img src="./images/product/902_1.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/902_2.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/902_3.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/902_4.jpg" alt=""></a>
+					</div>
+					<div class="item-box clearfix">
+						<a href="javascript:;" class="img_box"><img src="./images/product/903_1.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/903_2.jpg" alt=""></a>
+						<a href="javascript:;" class="img_box"><img src="./images/product/903_3.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="section">
 			<h2>合作客户</h2>
@@ -103,7 +127,17 @@
 	</div>
 	<!--右侧悬浮菜单 结束-->
 	
-
+	<script>
+    	$(function(){  
+    		$("#demo1").find("li:first").addClass("current");
+  			$(".tab-cont").find(".item-box:first").show();    //为每个item-box的第一个元素显示        
+  			$("#demo1 li").on("click",function(){ //给a标签添加事件  
+     			var index=$(this).index();  //获取当前a标签的个数  
+     			$(this).parent().next().find(".item-box").hide().eq(index).show(); //返回上一层，在下面查找css名为box隐藏，然后选中的显示  
+     			$(this).addClass("current").siblings().removeClass("current"); //a标签显示，同辈元素隐藏  
+  			})  
+		})  
+    </script>
 	<script type="text/javascript">
 		$(function(){
 			$('.slide .icon li').not('.up,.down').mouseenter(function(){
