@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《我的老师 | 魏巍》',
-        url1:'http://mp.weixin.qq.com/s/OS4cjheEOVVy72cV8R_fpw',
+        title_1:'最近更新:《三原县走出的“女马云”》',
+        url1:'http://mp.weixin.qq.com/s/qAaztULADKl1NBYhVOZvvg',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'三原县走出的“女马云”',
+				author:'还读',
+				time:'2017/09/20',
+				url:'http://mp.weixin.qq.com/s/qAaztULADKl1NBYhVOZvvg',
+				img:'./images/list_img/article69.jpg'
+			},
 	    	{
 				name:'雪:血',
 				author:'可亭',
