@@ -1,8 +1,8 @@
 new Vue({
     el: '#newArticle',
     data:{
-        title_1:'最近更新:《三原县走出的“女马云”》',
-        url1:'http://mp.weixin.qq.com/s/qAaztULADKl1NBYhVOZvvg',
+        title_1:'最近更新:《一只老鼠死了》',
+        url1:'http://mp.weixin.qq.com/s/MTDiPFIV8NCQr8vY9r6MqA',
         title_2:'大学生们，文学作品开始征稿啦！',
         url2:'./college.html'
     }
@@ -12,6 +12,13 @@ new Vue({
 	el: '#article',
 	data: {
 	    items: [
+	    	{
+				name:'一只老鼠死了',
+				author:'叶小松',
+				time:'2017/09/22',
+				url:'http://mp.weixin.qq.com/s/MTDiPFIV8NCQr8vY9r6MqA',
+				img:'./images/list_img/article70.jpg'
+			},
 	    	{
 				name:'三原县走出的“女马云”',
 				author:'还读',
